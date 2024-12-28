@@ -14,4 +14,5 @@ npm install gsap
 
 
 ### Menggunakan npm dan menajalankannya
+npm install
 npm run serve
