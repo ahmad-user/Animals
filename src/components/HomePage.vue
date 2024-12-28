@@ -1,8 +1,8 @@
 <template>
+  <div  class="donate">
+      donate
+    </div>
   <div class="yellow-sectionals">
-    <div  class="donate">
-        donate
-      </div>
       <div class="yellow-section">
       <img src="../assets/org/11.png" alt="Logo" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="10" />  
       <div class="text-container">
@@ -21,7 +21,7 @@
     </div>
   </div>
   
-<!-- //Bacground ke 2 -->
+<!-- Bacground ke 2 -->
     <div class="white-section" >
       <h1 > We Are</h1>
       <p>
@@ -109,6 +109,8 @@
     <button class="save" data-aos="fade-right"><b>apply for help</b> <i class="fas fa-arrow-right"></i></button>
     
 </div>
+
+<!-- Background ke 5 -->
 <div class="white2-section">
   <h1>Our Team</h1>
   <p>
@@ -293,12 +295,12 @@
     Kyiv,Ukraine<br>
     <p @mouseover="handleMouseOver" @mouseout="handleMouseOut"> main@isa.co.ua</p> 
   </div>
-  <img src="../assets/simbol/animeAll.png" data-aos="fade-up">
   <a href="#" class="fa fa-youtube" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
   <a href="#" class="fa fa-instagram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
   <a href="#" class="fa fa-facebook" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
   <a href="#" class="fa fa-linkedin" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
   <a href="#" class="fa fa-telegram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
+  <img src="../assets/simbol/animeAll.png" data-aos="fade-up">
 </div>
 </template>
 
@@ -337,6 +339,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
+
 .donate{
   text-align: center;
   border: 3px solid black;
@@ -345,11 +349,14 @@ export default defineComponent({
   padding: 10px 0;
   width: 100px;
   margin-left: 90%;
+  margin-bottom: 140%;
+  margin-right: 9%;
   position: fixed;
+  z-index: 999
 }
+
 .yellow-sectionals {
-  background-color: #ffeb3b;
-  background-color: #ffeb3b;
+  background-color: yellow;
   color: black;
   padding-top: 100px;
 }
@@ -384,7 +391,53 @@ export default defineComponent({
   margin-left: 20px; 
    
 }
+@media (max-width: 768px) {
+  .donate {
+    width: 80px; 
+    bottom: 10px; 
+    right: 10px; 
+  }
 
+  .yellow-section {
+    min-height: 40vh; 
+    text-align: center; 
+    
+  }
+
+  .yellow-section h1 {
+    font-size: 2.5rem; 
+    
+  }
+
+  .ass {
+    font-size: 1.8rem; 
+  }
+
+  .image-row a {
+    font-size: 30px; 
+  }
+
+  .text-container {
+    margin-left: 0; 
+  }
+}
+
+/* jika web mengecil */
+@media (max-width: 480px) {
+  .yellow-section {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .yellow-section h1 {
+    font-size: 2rem; 
+  }
+
+  .image-row a {
+    font-size: 25px; 
+    margin: 5px; 
+  }
+}
 /* Background ke 2 */
 .white-section {
   background-color: #ffffff;
@@ -436,6 +489,63 @@ export default defineComponent({
   text-align: center;
   text-decoration: none;
   margin: 50px 10px;
+}
+
+@media (max-width: 768px) {
+  .white-section {
+    padding: 15px; 
+    margin-left: 0; 
+    margin-top: 40px; 
+  }
+
+  .white-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .white-section p {
+    font-size: 1.8rem; 
+    
+  }
+
+  .garis_verikal {
+    height: 100px; 
+  }
+
+  .container {
+    flex-direction: row; 
+    text-align: left; 
+    margin-right: 20%;
+  }
+
+  .white-section iframe {
+    height: 300px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .white-section {
+    padding: 10px; 
+  }
+
+  .white-section h1 {
+    font-size: 2rem; 
+  }
+
+  .white-section p {
+    font-size: 1.6rem; 
+  }
+
+  .garis_verikal {
+    height: 50px; 
+  }
+
+  .container {
+    text-align: center; 
+  }
+
+  .white-section iframe {
+    height: 250px; 
+  }
 }
 
 /* backgroun ke 3 */
@@ -491,9 +601,58 @@ export default defineComponent({
   background-color: yellow;  
 }
 
+@media (max-width: 768px) {
+  .blue-section {
+    padding-left: 20px; 
+    padding-top: 30px;  
+    padding-bottom: 50px; 
+  }
+
+  .blue-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .blue-section p {
+    font-size: 1.6rem;
+  }
+
+  .blue-section button {
+    width: 100%; 
+    height: auto; 
+    font-size: 1.2rem; 
+    padding-left: 20px;
+  }
+
+  .button1, .button2, .button3 {
+    margin-bottom: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .blue-section {
+    padding-left: 10px; 
+    padding-top: 20px; 
+    padding-bottom: 40px; 
+  }
+
+  .blue-section h1 {
+    font-size: 2rem; 
+  }
+
+  .blue-section p {
+    font-size: 1.4rem; 
+  }
+
+  .blue-section button {
+    font-size: 1rem; 
+    padding-left: 10px; 
+    height: auto; 
+  }
+}
+
 /* bacground ke 4 */
 .orange-section {
-  background-color: orange;
+  background-color: greenyellow;
   min-height: 100vh;
   padding: 20px;  
   text-align: left;
@@ -527,7 +686,7 @@ export default defineComponent({
 }
 .buttonAll:hover {
   transform: scale(1.05);  
-  background-color: #5f3bff;  
+  background-color: khaki;  
 }
 .save{
   margin-top: 50px;
@@ -546,7 +705,62 @@ export default defineComponent({
 }
 .save:hover {
   transform: scale(1.05);  
-  background-color: #ff3b3b;  
+  background-color: sienna;  
+}
+
+@media (max-width: 768px) {
+  .orange-section {
+    padding-left: 20px; 
+    margin-top: 50px; 
+  }
+
+  .orange-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .orange-section p {
+    font-size: 1.6rem; 
+  }
+
+  .buttonAll {
+    width: 100%; 
+    height: auto; 
+    font-size: 1.2rem; 
+    padding: 12px; 
+  }
+
+  .save {
+    width: 100%; 
+    font-size: 1.2rem; 
+    margin-top: 20px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .orange-section {
+    padding-left: 10px; 
+    margin-top: 20px; 
+  }
+
+  .orange-section h1 {
+    font-size: 2rem; 
+  }
+
+  .orange-section p {
+    font-size: 1.4rem; 
+  }
+
+  .buttonAll {
+    width: 100%; 
+    font-size: 1rem; 
+    padding: 10px; 
+  }
+
+  .save {
+    font-size: 1.2rem; 
+    padding: 12px 40px; 
+    margin-bottom: 40px;
+  }
 }
  /* Background ke 5  */
 .white2-section {
@@ -581,7 +795,7 @@ export default defineComponent({
 }
 
 .card {
-  background-color: yellow;
+  background-color: gold;
   border: 3px solid black;
   text-align: center;
   padding: 20px;
@@ -597,7 +811,7 @@ export default defineComponent({
 }
 .card:hover {
   transform: scale(1.05);  
-  background-color: #5f3bff;  
+  background-color: royalblue;  
 }
 .card h3 {
   font-size: 1.5rem;
@@ -608,6 +822,60 @@ export default defineComponent({
 .card p {
   font-size: 1rem;
   color: black;
+}
+@media (max-width: 1024px) {
+  .white2-section {
+    padding-left: 50px; 
+    margin-right: 30px; 
+  }
+
+  .white2-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .white2-section p {
+    font-size: 1.8rem; 
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .white2-section {
+    padding-left: 20px; 
+    margin-top: 40px; 
+    margin-right: 20px; 
+  }
+
+  .white2-section h1 {
+    font-size: 2rem; 
+  }
+
+  .white2-section p {
+    font-size: 1.6rem; 
+  }
+
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .card {
+    padding: 15px; 
+  }
+
+  .card img {
+    max-height: 150px; 
+  }
+
+  .card h3 {
+    font-size: 1.3rem; 
+  }
+
+  .card p {
+    font-size: 0.9rem; 
+  }
 }
 
 /* background ke 6 */
@@ -646,6 +914,69 @@ export default defineComponent({
   border-radius: 5px 5px 0 0;
 }
 
+@media (max-width: 1024px) {
+  .pink-section {
+    padding-left: 50px; 
+    padding-right: 30px; 
+  }
+
+  .pink-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .pink-section h2 {
+    font-size: 2rem; 
+  }
+
+  .pink-section p {
+    font-size: 1.2rem; 
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .card1 {
+    padding: 15px; 
+  }
+
+  .pink-section img {
+    max-height: 180px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .pink-section {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-top: 40px; 
+  }
+
+  .pink-section h1 {
+    font-size: 2rem; 
+  }
+
+  .pink-section h2 {
+    font-size: 1.8rem; 
+  }
+
+  .pink-section p {
+    font-size: 1rem; 
+  }
+
+  .grid {
+     grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .card1 {
+    padding: 10px; 
+  }
+
+  .pink-section img {
+    max-height: 150px; 
+  }
+}
+
 /* background ke 7 */
 .white3-section {
   background-color: white;
@@ -678,7 +1009,54 @@ export default defineComponent({
   border-radius: 5px 5px 0 0; 
 }
 
-/* background ke 9 */
+@media (max-width: 1024px) {
+  .white3-section {
+    padding-left: 50px;
+    padding-right: 30px; 
+  }
+
+  .white3-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .white3-section p {
+    font-size: 1.5rem; 
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .white3-section img {
+    max-height: 180px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .white3-section {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-top: 40px; 
+  }
+
+  .white3-section h1 {
+    font-size: 2rem; 
+  }
+
+  .white3-section p {
+    font-size: 1.2rem; 
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);  
+  }
+
+  .white3-section img {
+    max-height: 150px; 
+  }
+}
+
+/* background ke 8 */
 .green-section {
   background-color: limegreen;
   min-height: 100vh;
@@ -720,5 +1098,59 @@ export default defineComponent({
   text-decoration: none;
   margin: 50px 10px;
   color: inherit;
+}
+
+@media (max-width: 1024px) {
+  .green-section {
+    padding-left: 50px; 
+    padding-right: 30px; 
+  }
+
+  .green-section h1 {
+    font-size: 2.5rem; 
+  }
+
+  .Ukraine {
+    font-size: 1.8rem; 
+  }
+
+  .green-section img {
+    width: 300px; 
+    margin-left: 10px; 
+    padding-right: 50px; 
+    padding-bottom: 150px; 
+  }
+
+  .green-section a {
+    font-size: 40px; 
+    margin: 40px 10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .green-section {
+    padding-left: 20px; 
+    padding-right: 20px; 
+    margin-top: 40px; 
+  }
+
+  .green-section h1 {
+    font-size: 2rem; 
+  }
+
+  .Ukraine {
+    font-size: 1.5rem; 
+  }
+
+  .green-section img {
+    width: 250px; 
+    padding-right: 20px; 
+    padding-bottom: 100px; 
+  }
+
+  .green-section a {
+    font-size: 30px; 
+    margin: 30px 5px; 
+  }
 }
 </style>
