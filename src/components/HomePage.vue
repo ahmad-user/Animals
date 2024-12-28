@@ -335,9 +335,6 @@ export default defineComponent({
 });
 </script>
 
-<script>
-</script>
-
 <style scoped>
 
 
@@ -349,7 +346,7 @@ export default defineComponent({
   padding: 10px 0;
   width: 100px;
   margin-left: 90%;
-  margin-bottom: 140%;
+  margin-bottom: 170%;
   margin-right: 9%;
   position: fixed;
   z-index: 999
@@ -1154,3 +1151,4 @@ export default defineComponent({
   }
 }
 </style>
+
