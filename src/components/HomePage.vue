@@ -6,21 +6,20 @@
       <div class="yellow-section">
       <img src="../assets/org/11.png" alt="Logo" data-aos="fade-up"  data-aos-delay="50" data-aos-duration="10" />  
       <div class="text-container">
-     
        <div data-aos="fade-left" data-aos-delay="5" data-aos-duration="10"><h1>Innovative<br> Solutions<br> for<br> Animals</h1></div>
-       <div class="as">
-         <p data-aos="fade-up"  data-aos-delay="5" data-aos-duration="10">charity organization</p>
-       <div class="image-row">
-        <a href="#" class="fa fa-youtube" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
-        <a href="#" class="fa fa-instagram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
-        <a href="#" class="fa fa-facebook" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
-        <a href="#" class="fa fa-linkedin" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
-        <a href="#" class="fa fa-telegram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
       </div>
     </div>
-  </div>
-  </div>
+    <div class="ass">
+    <p data-aos="fade-up"  data-aos-delay="5" data-aos-duration="10">charity organization</p>
+    <div class="image-row">
+          <a href="#" class="fa fa-youtube" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
+          <a href="#" class="fa fa-instagram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
+          <a href="#" class="fa fa-facebook" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
+          <a href="#" class="fa fa-linkedin" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
+          <a href="#" class="fa fa-telegram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
     </div>
+    </div>
+  </div>
   
 <!-- //Bacground ke 2 -->
     <div class="white-section" >
@@ -334,7 +333,8 @@ export default defineComponent({
 });
 </script>
 
-
+<script>
+</script>
 
 <style scoped>
 .donate{
@@ -351,11 +351,11 @@ export default defineComponent({
   background-color: #ffeb3b;
   background-color: #ffeb3b;
   color: black;
+  padding-top: 100px;
 }
-
 .yellow-section { 
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -367,20 +367,22 @@ export default defineComponent({
   margin: 0;
   display: flex;
   flex-direction: column;
-  
+
 }
-.as {
+.ass{
   font-size: 2.2rem;
-  color: black;
 }
-.yellow-section img {
-  max-width: 50vw; 
-  margin-right: 20px; 
+.image-row a {
+  margin: 0 10px; 
+  font-size: 50px; 
+  text-decoration: none; 
+  padding-bottom: 100px;
 }
 .text-container {
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;  
+  margin-left: 20px; 
+   
 }
 
 /* Background ke 2 */
@@ -717,5 +719,6 @@ export default defineComponent({
   text-align: center;
   text-decoration: none;
   margin: 50px 10px;
+  color: inherit;
 }
 </style>
