@@ -21,6 +21,8 @@
     </div>
   </div>
   
+
+
 <!-- Bacground ke 2 -->
     <div class="white-section" >
       <h1 > We Are</h1>
@@ -76,7 +78,7 @@
    <div class="orange-section">
     <h1>We Want to help</h1>
     <p>homeless packs, volunteers, guardians, overstayers, shelters and<br> other organisations</p><br>
-    <button class="buttonAll" data-aos="fade-up">Shelter of Victoria Bulbyna</button>
+    <button class="buttonAll" data-aos="fade-up" >Shelter of Victoria Bulbyna</button>
     <button  class="buttonAll" data-aos="fade-up">City of faithful hearts</button>
     <button  class="buttonAll" data-aos="fade-up">Shelter of Natalia<br> Tymoshenko</button>
     <button  class="buttonAll" data-aos="fade-up">Shelter of Jeanne Sass</button>
@@ -260,7 +262,7 @@
   </div>
 </div>
 
-<!-- background 8 -->
+<!-- background 7 -->
 <div class="white3-section">
   <h1>Out Partners</h1>
   <p>
@@ -288,7 +290,7 @@
   </div>
 </div>
 
-<!-- background 9 -->
+<!-- background 8 -->
 <div class="green-section">
   <h1>Contact us</h1>
   <div class="Ukraine">
@@ -302,7 +304,11 @@
   <a href="#" class="fa fa-telegram" @mouseover="handleMouseOver" @mouseout="handleMouseOut"></a>
   <img src="../assets/simbol/animeAll.png" data-aos="fade-up">
 </div>
+
+
 </template>
+
+
 
 <script>
 import { defineComponent } from 'vue';
@@ -581,21 +587,21 @@ export default defineComponent({
 }
 .button1:hover {
   transform: scale(1.05);  
-  background-color: yellow;  
+  background-color: chartreuse;  
 }
 .button2{
   background-color: green;
 }
 .button2:hover {
   transform: scale(1.05);  
-  background-color: yellow;  
+  background-color: chartreuse;  
 }
 .button3{
   background-color: pink;
 }
 .button3:hover {
   transform: scale(1.05);  
-  background-color: yellow;  
+  background-color: chartreuse;  
 }
 
 @media (max-width: 768px) {
@@ -808,7 +814,7 @@ export default defineComponent({
 }
 .card:hover {
   transform: scale(1.05);  
-  background-color: royalblue;  
+  background-color: fuchsia;  
 }
 .card h3 {
   font-size: 1.5rem;
@@ -1150,5 +1156,7 @@ export default defineComponent({
     margin: 30px 5px; 
   }
 }
+
 </style>
+
 
